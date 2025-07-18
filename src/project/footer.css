@@ -1,0 +1,60 @@
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(4, 1fr);
+        text-align: left;
+    }
+}
+
+.address, .pages, .company-info, .social-media {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #9ca3af;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.cocologo {
+    width: 100px;
+    margin: 10px 0;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+}
+
+.copyright {
+
+    text-align: center;
+    /* margin-top: 20px; */
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}

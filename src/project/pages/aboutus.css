@@ -1,0 +1,202 @@
+
+
+/* General Container */
+.container {
+  text-align: center;
+  padding: 30px 15px;
+}
+
+/* Section Title */
+.some {
+  font-size: 16px;
+  font-weight: 600;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.speak {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Vision and Mission Cards */
+.split {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+}
+
+.split:hover {
+  transform: translateY(-5px);
+}
+
+.splithead {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* About Content Section */
+.aboutcon2 {
+  display: flex;
+  gap: 60px;
+  padding: 60px 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutimg,
+.deek {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.aboutpara {
+  max-width: 600px;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.abouthead {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Team Section */
+.chithra {
+  text-align: center;
+  padding: 40px 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.team {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.chithraimg {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chithraname {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #333;
+}
+
+.manage {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.icon {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.icon a {
+  color: #555;
+  font-size: 22px;
+  transition: color 0.3s ease-in-out, transform 0.2s;
+}
+
+.icon a:hover {
+  color: #333;
+  transform: scale(1.2);
+}
+
+/* AOS Animations */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+[data-aos="fade-left"] {
+  transform: translateX(-30px);
+}
+
+[data-aos="fade-right"] {
+  transform: translateX(30px);
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---------------------
+   Responsive Breakpoints
+----------------------*/
+
+@media (max-width: 1024px) {
+  .aboutcon2 {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .aboutpara {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .speak {
+    font-size: 28px;
+  }
+
+  .abouthead {
+    font-size: 24px;
+  }
+
+  .aboutpara {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .split {
+    font-size: 14px;
+  }
+
+  .chithraname {
+    font-size: 20px;
+  }
+
+  .manage {
+    font-size: 14px;
+  }
+
+  .icon a {
+    font-size: 20px;
+  }
+}
+
+

@@ -1,0 +1,123 @@
+/* .imgrew {
+ 
+    overflow: auto;
+    white-space: nowrap;
+    
+  }
+   */
+  
+
+
+
+/* Main Container */
+.review-container {
+  text-align: center;
+  padding: 40px 20px;
+  /* background: #f9f9f9; */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Title Styling */
+.review-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  
+}
+
+/* Review List (Carousel) */
+.review-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  white-space: nowrap;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+.review-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* Review Cards */
+.review-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  /* width: 100px; */
+  flex: 0 0 auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: slideUp 0.6s ease-in-out;
+}
+
+.review-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.review-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Scroll Buttons - Simple Design */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+  }
+  
+  .scroll-btn:hover {
+    background: #555;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  
+/* Animations */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .review-title {
+    font-size: 1.5rem;
+  }
+  .review-list {
+    justify-content: center;
+  }
+  .review-card {
+    width: 150px;
+  }
+}
+
+   
